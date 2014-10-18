@@ -9,11 +9,11 @@ function get_location(i) {
 }
 
 function getCoords(position) {
-    i++
+    i++;
     if (position) {
         currentLocation.lat = position.coords.latitude;
         currentLocation.lng = position.coords.longitude;
-        currentLocation.altitude = position.coords.altitude;
+
         console.log(currentLocation.lng);
         console.log(currentLocation.lat);
           geoFire.set("location" + i, [currentLocation.lat, currentLocation.lng]).then(function() {
@@ -27,12 +27,12 @@ function getCoords(position) {
 }
 get_location();
 
-var fireURL = "https://trailblazr.firebaseio.com/";
+var fireURL = "https://trailblazr.firebaseio.com/trails";
 
 var fireRef = new Firebase(fireURL);
-var geoFire = new GeoFire(fireRef);
+//var route = geoFire.child();
 
-//geoFire.child();
+var geoFire = new GeoFire(fireRef);
 
 // var route = setInterval()
 
