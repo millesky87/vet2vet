@@ -22,7 +22,28 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-<div id="map-canvas"></div>
+
+
+<script type="text/x-handlebars" data-template-name="application">
+    {{outlet}}
+</script>
+
+<script type="text/x-handlebars" data-template-name="index">
+    <div id="map-canvas"></div>
+    {{#link-to 'active'}}<button>Blaze</button>{{/link-to}}
+</script>
+
+<script type="text/x-handlebars" data-template-name="active">
+    <div id="map-canvas"></div>
+    <div class="timer">
+        <h2>{{time}}<h2>
+        <button>Start</button>
+    </div>
+    <div class="timer">
+        <h2>{{lapTime}}</h2>
+        <button>Lap</button>
+    </div>
+</script>
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->

@@ -39,3 +39,9 @@ setInterval(
 );
 
 // var route = setInterval()
+
+window.Trailblazr = Ember.Application.create();
+
+Trailblazr.Router.map(function(){
+    this.route('active');
+});
