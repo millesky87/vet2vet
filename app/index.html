@@ -22,12 +22,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-<div class="container">
-
-    <div class="map">
-    </div>
-    <button>Blaze</button>
-</div>
+<div id="map-canvas"></div>
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
@@ -42,7 +37,10 @@
         <!-- endbower -->
         <!-- endbuild -->
 
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
         <!-- build:js scripts/main.js -->
+        <script src="scripts/map.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 </body>
