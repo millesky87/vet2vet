@@ -1,5 +1,6 @@
 var currentLocation = {},
     i = 0;
+
 function error(err) {
   console.log(err.code);
 }
