@@ -43,13 +43,24 @@
         <h2>{{lapTime}}</h2>
         <button>Lap</button>
     </div>
-    <div class='btn-green'>
-      Go
-    </div>
-    <div class='btn-red'>
-      Stop
-    </div>
 </script>
+
+<script type="text/x-handlebars" data-template-name="Post">
+  <div id="map-canvas"></div>
+  <div class="final-time">
+      <h3>{{posttime}}<h3>
+  </div>
+  <div class="name">
+    <input type="text" placeholder"name">
+  </div>
+  <div class = "Comments">
+    <textarea name="textarea" rows="10" cols="50" placeholder="Write a comment"></textarea>
+  </div>
+  <div class="submit">
+    <button class="save">SAVE</button>
+  </div>
+</script>
+
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
