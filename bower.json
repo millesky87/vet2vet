@@ -3,7 +3,8 @@
   "private": true,
   "dependencies": {
     "jquery": "~1.11.0",
-    "emberfire": "~1.2.7"
+    "emberfire": "~1.2.7",
+    "geofire": "~3.0.3"
   },
   "devDependencies": {}
 }
