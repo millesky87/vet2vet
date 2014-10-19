@@ -4,65 +4,88 @@
   width: 70px;
   padding:9px 15px;
   border-radius:4px;
-  border:1px solid black;
   color:white;
-  font-shadow:0 -1px 1px white;
   font-weight:100;
   font-family:helvetica;
   font-size:.8em;
-  margin:0px 8px;
+  margin:0px 25px;
 }
 
 html, body, #map-canvas {
     height: 100%;
-    // margin: 0px;
+    margin: 0px;
     padding: 0px;
+    background: #FEEFE1;
     text-align: center;
+}
+
+header {
+    height: 85px;
+    width: 100%;
+    background: #485F6D;
+
+    #hamburger {
+        padding-top: 23px;
+        width: 45px;
+        display: inline-block;
+
+        div {
+            background-color: #fff;
+            border: 1px solid #eee;
+            border-radius: 2px 2px 2px 2px;
+            height: 3px;
+            margin-top: 5px;
+            width: 90%;
+            margin-left: -75px;
+        }
+    }
+
+    h1 {
+        display: inline-block;
+        color: #fff;
+        margin-left: -30px;
+        // float: right;
+       // margin-bottom: 20px;
+    }
+
 }
 
 #map-canvas {
     width: 100%;
-    height: 75%;
+    height: 40%;
+    border-bottom: 5px solid #fff;
 }
 
 .blaze-btn {
-    width: 70px;
-    height: 70px;
-    margin-top: 20px;
-    font-size: 34px;
-    border: 2px solid #333;
-    border-radius: 50%;
-    box-shadow:inset 1px 1px 2px #333;
+    @include button(#D5753D);
+    margin-top: 40px;
+    width: 40%;
+    font-size: 1em;
 }
 
 h2 {
-    margin:0;
+    margin: 0;
+    color: #444;
+}
+
+time {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #999;
 }
 
 .timer {
     display: inline-block;
-    width:49.3%;
+    width:50%;
     padding:10px 0;
     float:left;
-    border: 1px solid #000;
-    margin:10px 0;
-    border-radius:4px;
-    box-shadow:inset 1px 1px 2px grey;
+    margin:15px 0 10px 0;
 }
 
 .btn-red {
-  @include button(linear-gradient(#d10000,#850000));
- 
-
-  &:hover {
-    background:linear-gradient(#b80000,#750000);
-  }
+  @include button(#8F3B1B);
 }
 
 .btn-green {
-  @include button(linear-gradient(#0c1,#009e0d));
-
-  &:hover {
-    background:linear-gradient(#00b80f,#008f0c);
-  }
+  @include button(#D5753D);
 }
+
