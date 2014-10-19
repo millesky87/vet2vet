@@ -29,21 +29,21 @@
 
 <script type="text/x-handlebars" data-template-name="index">
     <div id="map-canvas"></div>
-    {{#link-to 'active'}}<button>Blaze</button>{{/link-to}}
+    {{#link-to 'active'}}<button class="blaze-btn">B</button>{{/link-to}}
 </script>
 
 <script type="text/x-handlebars" data-template-name="active">
     <div id="map-canvas"></div>
     <div class="timer">
-        <h2>{{time}}13:78</h2>
+        <h2><time>0:00:00</time></h2>
     </div>
     <div class="timer">
-        <h2>{{lapTime}}45:67</h2>
+        <h2><time>0:00:00</time></h2>
     </div><br>
-    <div class='btn-green'>
-      Go
+    <div class='btn-green' id="start">
+      Lap
     </div>
-    <div class='btn-red'>
+    <div class='btn-red' id="stop">
       Stop
     </div>
 
@@ -70,6 +70,7 @@
         <!-- build:js scripts/main.js -->
         <script src="scripts/map.js"></script>
         <script src="scripts/main.js"></script>
+        <script src="scripts/timer.js"></script>
         <!-- endbuild -->
 </body>
 </html>
