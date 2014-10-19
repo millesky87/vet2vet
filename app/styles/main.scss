@@ -18,7 +18,9 @@ html, body, #map-canvas {
     // margin: 0px;
     padding: 0px;
     text-align: center;
+    background-color: #FEEFE1
 }
+
 
 #map-canvas {
     width: 100%;
@@ -52,7 +54,7 @@ h2 {
 
 .btn-red {
   @include button(linear-gradient(#d10000,#850000));
- 
+
 
   &:hover {
     background:linear-gradient(#b80000,#750000);
@@ -65,4 +67,28 @@ h2 {
   &:hover {
     background:linear-gradient(#00b80f,#008f0c);
   }
+}
+.btn-save{ background: #C57200;
+  width: 90px;
+  height: 40px;
+  margin-top: 20px;
+  font-size: 20px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  box-shadow: inset 1px 1px 2px #333;
+}
+
+.box{
+  border: 3px inset;
+  width:300px;
+  height: 30px;
+  text-align: center;
+}
+
+
+.text-box{
+  border: 3px inset;
+  width: 300px;
+  text-align: center;
+
 }

@@ -42,3 +42,7 @@ window.Trailblazr = Ember.Application.create();
 Trailblazr.Router.map(function(){
     this.route('active');
 });
+
+Trailblazr.Router.map(function(){
+    this.route('Post');
+});
