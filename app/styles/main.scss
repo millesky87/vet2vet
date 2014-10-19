@@ -15,60 +15,82 @@
 
 html, body, #map-canvas {
     height: 100%;
-    // margin: 0px;
+    margin: 0px;
     padding: 0px;
+    background: #FEEFE1;
     text-align: center;
+}
+
+header {
+    width: 100%;
+    background: #485F6D;
+    height:58px;
+
+    #hamburger {
+        width: 45px;
+        display: inline-block;
+
+        div {
+            background-color: #fff;
+            border: 1px solid #eee;
+            border-radius: 2px 2px 2px 2px;
+            height: 3px;
+            margin-top: 5px;
+            width: 90%;
+            margin-left: -65px;
+        }
+    }
+
+    h1 {
+        display: inline-block;
+        color: #fff;
+        margin:10px 0 0 -30px;
+        // float: right;
+       // margin-bottom: 20px;
+    }
+
 }
 
 #map-canvas {
     width: 100%;
-    height: 75%;
+    height: 40%;
+    border-bottom: 5px solid #fff;
 }
 
 .blaze-btn {
-    width: 70px;
-    height: 70px;
-    margin-top: 20px;
-    font-size: 34px;
-    border: 2px solid #333;
-    border-radius: 50%;
-    box-shadow:inset 1px 1px 2px #333;
+    @include button(#D5753D);
+    margin-top: 40px;
+    width: 40%;
+    font-size: 1em;
 }
 
 h2 {
-    margin:0;
+    margin: 0;
+    color: #444;
+}
+
+time {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #999;
 }
 
 .timer {
     display: inline-block;
-    width:49.3%;
+    width:50%;
     padding:10px 0;
     float:left;
-    border: 1px solid #000;
-    margin:10px 0;
-    border-radius:4px;
-    box-shadow:inset 1px 1px 2px grey;
+    margin:15px 0 10px 0;
 }
 
 .btn-red {
-  @include button(linear-gradient(#d10000,#850000));
-
-
   &:hover {
     background:linear-gradient(#b80000,#750000);
   }
-}
-
-.btn-sign-up {
-  @include button(linear-gradient(#D5753D 25%,#de9468))
+  @include button(#8F3B1B);
 }
 
 .btn-green {
-  @include button(linear-gradient(#0c1,#009e0d));
-
-  &:hover {
-    background:linear-gradient(#00b80f,#008f0c);
-  }
+  @include button(#D5753D);
 }
 
 .registration-container {
@@ -76,21 +98,34 @@ h2 {
   background:#FEEFE1;
   height:100%;
   width:100%;
-  padding-top:10px;
+  padding-top:30px;
 }
 
 ::-webkit-input-placeholder {
   color:#485F6D;
-  font-size:.8em;
+  font-size:1em;
+}
+
+.btn-sign-up {
+  @include button(linear-gradient(#D5753D 25%,#de9468));
+  padding:14px 28px;
+  font-size:1.2em;
+}
+
+.btn-sign-up:active {
+  @include button(linear-gradient(#b85d28,#dc8e60));
+  padding:14px 28px;
+  font-size:1.2em;
 }
 
 .registration {
-  margin-bottom:15px;
+  margin-bottom:20px;
   border:1px solid #999;
   outline:none;
   transition:all .2s ease;
-  height:32px;
-  width:70%;
+  height:48px;
+  width:80%;
+  font-size:1em;
   border-radius:5px;
   background:#e3e9ed;
   color:#485F6D;

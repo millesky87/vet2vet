@@ -24,13 +24,23 @@
 
 
 <script type="text/x-handlebars" data-template-name="application">
+    <header>
+        <div id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <h1>Trailblazr</h1>
+    </header>
     {{outlet}}
 </script>
 
+
 <script type="text/x-handlebars" data-template-name="index">
     <div id="map-canvas"></div>
-    {{#link-to 'active'}}<button class="blaze-btn">B</button>{{/link-to}}
+    {{#link-to 'active'}}<div class="blaze-btn">Blaze</div>{{/link-to}}
 </script>
+
 
 <script type="text/x-handlebars" data-template-name="active">
     <div id="map-canvas"></div>
@@ -47,8 +57,6 @@
       Stop
     </div>
 </script>
-
-
 
 
 <script type="text/x-handlebars" data-template-name="Post">
@@ -77,10 +85,11 @@
   <div class='registration-container'>
     {{input class='registration' type='text' value=email placeholder='Email'}}<br>
     {{input class='registration' type='password' value=password placeholder='Password'}}<br>
-    {{input class='registration' type='text' value=name placeholder='Name(Optional)'}}<br>
+    {{input class='registration' type='text' value=name placeholder='Name (Optional)'}}<br>
     <div class='btn-sign-up'>Sign Up</div>
   </div>
 </script>
+
 
 
 
